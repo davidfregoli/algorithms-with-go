@@ -1,3 +1,3 @@
-# algorithmswithgo.com
+# algorithmswithgo.com - david fregoli
 
-Problems and solutions for the Algorithms with Go course.
+My solutions for the Algorithms with Go course.
