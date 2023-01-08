@@ -12,9 +12,8 @@ My solutions for the Algorithms with Go course.
 - [x] Convert a number from any base to any other base (2-16)
 - [x] Find two numbers in a list that sum to a given amount
 - [x] Factor a number
-- [ ] Fibonacci numbers
-- [ ] Greatest common divisor (GCD)
-- [ ] stdin and stdout
+- [x] Fibonacci numbers
+- [x] Greatest common divisor (GCD)
 
 ## Module 2 - Sorting Algorithms
 - [ ] Bubble sort
