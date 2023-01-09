@@ -22,6 +22,9 @@ package module01
 //	Fibonacci(6) => 8
 //	Fibonacci(7) => 13
 //	Fibonacci(14) => 377
+
+var FibonacciMem = map[int]int{}
+
 func Fibonacci(n int) int {
 	if n == 0 {
 		return 0
@@ -29,5 +32,36 @@ func Fibonacci(n int) int {
 	if n == 1 {
 		return 1
 	}
-	return Fibonacci(n-1) + Fibonacci(n-2)
+	val, cached := FibonacciMem[n]
+	if !cached {
+		val = Fibonacci(n-1) + Fibonacci(n-2)
+		FibonacciMem[n] = val
+	}
+	return val
+}
+
+func FibonacciIter(n int) int {
+	if n == 0 {
+		return 0
+	}
+	if n == 1 {
+		return 1
+	}
+	var next int
+	seq := []int{0, 1}
+	for i := 2; i <= n; i++ {
+		next = seq[i-2] + seq[i-1]
+		seq = append(seq, next)
+	}
+	return next
+}
+
+func FibonacciRec(n int) int {
+	if n == 0 {
+		return 0
+	}
+	if n == 1 {
+		return 1
+	}
+	return FibonacciRec(n-1) + FibonacciRec(n-2)
 }
