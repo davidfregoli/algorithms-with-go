@@ -17,4 +17,4 @@ My solutions for the Algorithms with Go course.
 
 ## Module 2 - Sorting Algorithms
 - [x] Bubble sort
-- [ ] Insertion sort
+- [x] Insertion sort
