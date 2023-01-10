@@ -16,5 +16,5 @@ My solutions for the Algorithms with Go course.
 - [x] Greatest common divisor (GCD)
 
 ## Module 2 - Sorting Algorithms
-- [ ] Bubble sort
+- [x] Bubble sort
 - [ ] Insertion sort
